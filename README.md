@@ -21,6 +21,7 @@ sudo docker run -d -i -t --name slave2 --dns=localdns hadoop
 sudo docker run -d -i -t --name slave3 --dns=localdns hadoop
 
 4 Add master and slaves to /etc/hosts
+
 5 Restart localdns
 
 sudo docker restart localdns

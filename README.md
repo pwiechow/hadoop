@@ -1,6 +1,8 @@
 ## Hadoop docker image
 
-### Example of usage:
+#### Usage
+
+Result: 4 containers running on localhost: master, slave 1 .. 3, localdns
 
 * Run local DNS used by hadoop cluster:
 
@@ -12,13 +14,13 @@
 
 * Run master, slave1..3
 
-`sudo docker run -d -i -t --name master --dns=localdns hadoop
+`sudo docker run -d -i -t --name master --dns=localdns hadoop`
 
-sudo docker run -d -i -t --name slave1 --dns=localdns hadoop
+`sudo docker run -d -i -t --name slave1 --dns=localdns hadoop`
 
-sudo docker run -d -i -t --name slave2 --dns=localdns hadoop
+`sudo docker run -d -i -t --name slave2 --dns=localdns hadoop`
 
-sudo docker run -d -i -t --name slave3 --dns=localdns hadoop`
+`sudo docker run -d -i -t --name slave3 --dns=localdns hadoop`
 
 * Add master and slaves to /etc/hosts
 

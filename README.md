@@ -14,13 +14,13 @@ Result: 4 containers running on localhost: master, slave 1 .. 3, localdns
 
 * Run master, slave1..3
 
-`sudo docker run -d --name master --dns=$IP_OF_LOCAL_DNS hadoop`
+`sudo docker run -d --name master --dns=$IP_OF_LOCAL_DNS pwiechow/hadoop`
 
-`sudo docker run -d --name slave1 --dns=$IP_OF_LOCAL_DNS hadoop`
+`sudo docker run -d --name slave1 --dns=$IP_OF_LOCAL_DNS pwiechow/hadoop`
 
-`sudo docker run -d --name slave2 --dns=$IP_OF_LOCAL_DNS hadoop`
+`sudo docker run -d --name slave2 --dns=$IP_OF_LOCAL_DNS pwiechow/hadoop`
 
-`sudo docker run -d --name slave3 --dns=$IP_OF_LOCAL_DNS hadoop`
+`sudo docker run -d --name slave3 --dns=$IP_OF_LOCAL_DNS pwiechow/hadoop`
 
 * Add master and slaves to /etc/hosts
 

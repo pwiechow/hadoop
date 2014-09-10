@@ -16,8 +16,11 @@ sudo docker inspect localdns | grep IPAddress | sed 's/^[^0-9]\+\([0-9\.]\+\)\".
 3 Run master, slave1..3
 
 sudo docker run -d -i -t --name master --dns=localdns hadoop
+
 sudo docker run -d -i -t --name slave1 --dns=localdns hadoop
+
 sudo docker run -d -i -t --name slave2 --dns=localdns hadoop
+
 sudo docker run -d -i -t --name slave3 --dns=localdns hadoop
 
 4 Add master and slaves to /etc/hosts
